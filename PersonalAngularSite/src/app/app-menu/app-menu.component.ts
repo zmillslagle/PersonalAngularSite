@@ -14,7 +14,7 @@ export class AppMenuComponent implements OnInit {
 
   scrollTo(elementId: string) {
     const element = document.getElementById(elementId);
-    element.scrollIntoView();
+    element.scrollIntoView({behavior: 'smooth'});
   }
 
 }
